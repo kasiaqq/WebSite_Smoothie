@@ -229,13 +229,16 @@ footer{
     transition: stroke-dashoffset 2s linear 0.5s;
 } 
 @media all and (min-width: 1600px) {
+    body { width: 100vw; margin: 0; }
     .fixed-bar { height: 10%; }
     #logo { margin-right: 5%; }
     #page1 { display: flex; align-items: center; }
     svg { width: 200%; }
     #page6 { height: 100vh; }
-    #menu { margin-top: 1%; }
+    #menu { margin-top: 1.5%; }
     .box2 { width: 70%; height: 80%; }
+    .txt-p { font-size: 5vw; }
+    .bg-text { font-size: 5vw; }
  }
 @media all and (max-width: 1000px) {
     svg { display: none; }
