@@ -37,6 +37,16 @@ $(document).ready(function () {
 	// ANIMACJA
 	AOS.init();
 
-	
+	// BOOTSTRAP OFF FOR SMALL
+	function myFunction(x) {
+		if (x.matches) { // If media query matches
+			$("#page3").removeClass("row");
+			$("#page4").removeClass("row");
+			$("#page5").removeClass("row");
+		}
+	}
+	var x = window.matchMedia("(max-width: 680px)");
+	myFunction(x); // Call listener function at run time
+	x.addListener(myFunction); // Attach listener function on state changes 
 
 });

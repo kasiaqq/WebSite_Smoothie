@@ -234,18 +234,18 @@ footer{
     #page1 { display: flex; align-items: center; }
     svg { width: 200%; }
     #page6 { height: 100vh; }
+    #menu { margin-top: 1%; }
+    .box2 { width: 70%; height: 80%; }
  }
 @media all and (max-width: 1000px) {
     svg { display: none; }
     #smoothie { margin-top: 25vh; }
+    .menuButton { height: 1.4vw; width: 8vw; margin-top: 10%;}
+    .menuButton::before, 
+    .menuButton::after { height: 1.4vw; width: 8vw; margin-top: 3vw;}
+    .menuButton::after { margin-top: 1.6vw;}
  }
  @media all and (max-width: 680px) {
     body { height: 50vh; }
     .bg-image { background-position: 90% 50%; }
  }
- @media all and (max-width: 1000px) {
-    .menuButton { height: 1.4vw; width: 8vw; margin-top: 10%;}
-    .menuButton::before, 
-    .menuButton::after { height: 1.4vw; width: 8vw; margin-top: 3vw;}
-    .menuButton::after { margin-top: 1.6vw;}
-   }
