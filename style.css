@@ -1,0 +1,250 @@
+html{
+    scroll-behavior: smooth;
+    overflow: visible; 
+    width: 100%; 
+    height: 100vh; 
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    margin: 0;
+}
+.contant{
+    font-family: 'Averia Libre', cursive;
+}
+.main-background{
+    background-image: url(main-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.logo{
+    color:black;
+    margin-left: 1%;
+    filter: invert(95%); 
+    height: 100%;
+}
+#page1, #page2{
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
+    background-color: rgb(19, 19, 19, 0.3);
+}
+#page6{
+    width: 100%;
+    background-color: rgb(19, 19, 19, 0.8);
+    padding: 7%;
+}
+label{
+    color: white;
+}
+.box2{
+    position: relative;
+    margin-left: 10%;
+    width: 80%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.fixed-bar{
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    top: 1%;
+    z-index: 5px;
+}
+.menuButton{
+    height: 0.7vw;
+    width: 4vw;
+    border-radius: 15px;
+    background-color: rgb(202, 202, 202);
+    /*box-shadow: 0 1.5vw 0 0 rgb(202, 202, 202),
+                0 3vw 0 0 rgb(202, 202, 202); */
+    float: left;
+    margin-top: 2%;
+    margin-left: 4%; 
+}
+.menuButton::before,
+.menuButton::after{
+display: block;
+content: '';
+height: 0.7vw;
+width: 4vw;
+border-radius: 15px;
+background-color: rgb(202, 202, 202);
+margin-top: 1.5vw;
+}
+.menuButton::after{
+    margin-top: 0.8vw;
+}
+.menuSlide{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.6;
+    overflow-x: hidden;
+    transition: 0.3s width linear;
+    padding-top:6%;
+}
+#close{
+    filter: invert(95%);
+    color: black;
+    transition: 0.5s;
+    margin-top: -20%;
+    margin-right: 5%;
+    float: right;
+}
+.menuText{
+    color: black;
+    filter: invert(95%);
+    text-decoration: none;
+    font-size: 2vw;
+    transition: 0.3s; 
+    font-family: 'Averia Libre', cursive;
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+.menuText2{
+    color: black;
+    filter: invert(95%);
+    text-decoration: none;
+    font-size: 2vw;
+    transition: 0.3s; 
+    font-family: 'Averia Libre', cursive;
+    margin-left: 15%;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.bg-image{
+    width: 100%;
+   height: 100%;
+   background-position: 90% 50%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 35%;
+}
+.img1{
+    background-color: #ebe4d1;
+    background-image: url(sm2.png);
+    }  
+.img2{
+    background-color: #f18787;
+    background-image: url(sm1.png);
+    }
+.img3{
+    background-color: #ebe4d1;
+     background-image: url(sm3.png); 
+    }
+.bg-text{
+    color: white;
+    font-weight: bold;
+    font-size: 7vw;
+}
+.m-47{
+    margin-top: -47%;
+}
+.circle{
+    position: absolute;
+    float: right;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 50%;
+    height: 15vw;
+    width: 15vw;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    -moz-box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    -webkit-box-shadow:  5px 5px 20px rgba(0,0,0,0.2);
+    -o-box-shadow:  5px 5px 20px rgba(0,0,0,0.2);
+}
+.txt-p{
+    display: block;
+    font-size: 6vw;
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+    text-align: center;
+}
+.fruit-list{
+    position: relative;
+    display: block;
+    font-size: 3vw;
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+    text-align: justify;
+    text-justify: inter-character;
+    top: 10vw;
+    right: -26vw;
+}
+.fruit-box{
+    position: relative;
+    background-color: #facb4b;
+    width: 25vw;
+    height: 9vw;
+    top: 9vw;
+    left: 15vw;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
+    line-height: 9vw;
+}
+.fruit-circle{
+    position: relative;
+    left: 10vw;
+    top: 8vw;
+    float: left;
+    background-color: #facb4b;
+    border-radius: 50%;
+    height: 12vw;
+    width: 12vw;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    -webkit-box-shadow:  5px 5px 10px rgba(0,0,0,0.2);
+    -o-box-shadow:  5px 5px 10px rgba(0,0,0,0.2);
+}
+footer{
+    color:rgb(202, 202, 202);
+    float: right;
+    margin: 0;
+}
+/* ANIMACJA RYSOWANIE OBRYSU*/
+ #check path{
+    position: absolute;
+    opacity: 0.9;
+    stroke: white;
+    stroke-width: 20px;
+    fill: transparent;
+    stroke-dasharray: 1915;
+    stroke-dashoffset: 1915;
+    transition: stroke-dashoffset 2s linear 0.5s;
+}
+#check.checked path{
+    stroke-dashoffset: 0;
+    fill: transparent;
+    transition: stroke-dashoffset 2s linear 0.5s;
+} 
+@media all and (min-width: 1600px) {
+    .fixed-bar { height: 20%; }
+    #logo { margin-right: 5%; }
+    #page1 { display: flex; align-items: center; }
+    svg { width: 200%; }
+    #page6 { height: 100vh; }
+ }
+@media all and (max-width: 1000px) {
+    svg { display: none; }
+    #smoothie { margin-top: 25vh; }
+ }
+ @media all and (max-width: 680px) {
+    body { height: 50vh; }
+    .bg-image { background-position: 90% 50%; }
+ }
+ @media all and (max-width: 1000px) {
+    .menuButton { height: 1.4vw; width: 8vw; margin-top: 10%;}
+    .menuButton::before, 
+    .menuButton::after { height: 1.4vw; width: 8vw; margin-top: 3vw;}
+    .menuButton::after { margin-top: 1.6vw;}
+   }
