@@ -23,6 +23,7 @@ body{
     margin-left: 1%;
     filter: invert(95%); 
     height: 100%;
+    float: right;
 }
 #page1, #page2{
     height: 100%;
@@ -50,7 +51,7 @@ label{
     width: 100%;
     position: fixed;
     top: 1%;
-    z-index: 5px;
+    z-index: 10px;
 }
 .menuButton{
     height: 0.7vw;
@@ -59,9 +60,9 @@ label{
     background-color: rgb(202, 202, 202);
     /*box-shadow: 0 1.5vw 0 0 rgb(202, 202, 202),
                 0 3vw 0 0 rgb(202, 202, 202); */
-    float: left;
-    margin-top: 2%;
-    margin-left: 4%; 
+    float: right;
+    margin-top: 3%;
+    margin-right: -2%;
 }
 .menuButton::before,
 .menuButton::after{
@@ -228,7 +229,7 @@ footer{
     transition: stroke-dashoffset 2s linear 0.5s;
 } 
 @media all and (min-width: 1600px) {
-    .fixed-bar { height: 20%; }
+    .fixed-bar { height: 10%; }
     #logo { margin-right: 5%; }
     #page1 { display: flex; align-items: center; }
     svg { width: 200%; }
