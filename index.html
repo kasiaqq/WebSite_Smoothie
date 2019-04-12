@@ -4,124 +4,121 @@
     <meta charset="UTF-8">
     <title>Smoothies</title>
     <link rel="icon" href="logo.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0" />
     <meta name="description" content="Best smoothies in town!">
     <meta name="keywords" content="smoothie, smoothies, Polska">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Author" content="Katarzyna Majcher">
 
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Averia+Libre:700" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css" />
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js.js"></script>
-    
+
 </head>
 
 <body>
-
-    <div id="main" class="contant main-background">
-
+    <div id="main" class="main-background">
         <!-- HEADER -->
         <div id="nav-bar" class="fixed-bar">
+            <a href="javascript:void(0)">
+                <div class="menuButton" id="menu"></div>
+            </a>
             <a href="#page1"><img src="logo.png" id="logo" alt="logo" class="logo"></a>
-            <a href="javascript:void(0)"><div class="menuButton" id="menu"></div></a>
         </div>
         <div id="menuSlide" class="menuSlide">
             <a href="javascript:void(0)"><i class="far fa-window-close fa-3x invisible" id="close"></i></a>
-            <a href="#page1" class="menuText" id="btn-page1">START</a><br>
-            <a href="#page2" class="menuText">ABOUT</a><br>
-            <p class="menuText" style="font-style: italic">SMOOTHIES</p>
-            <a href="#page3" class="menuText">&#9679; YELLOW &#9679;</a><br>
-            <a href="#page4" class="menuText">&#9679; RED &#9679;</a><br>
-            <a href="#page5" class="menuText">&#9679; GREEN &#9679;</a><br>
-            <div style="margin-top: 10%;"><a href="#page6" class="menuText">CONTACT</a></div>
-            <div style="margin-top: 50%; margin-left: 10%; float: left;"><a href="" class="menuText"><i class="fab fa-facebook fa-3x"></i></a></div>
-            <div style="margin-top: 50%; margin-right: 25%; float: right;"><a href="" class="menuText"><i class="fab fa-instagram fa-3x"></i></a></div>
+            <a href="#page1" class="menuText marg" id="btn-page1">START</a><br>
+            <a href="#page2" class="menuText marg">ABOUT</a><br>
+            <p class="menuText marg" style="font-style: italic">SMOOTHIES</p>
+            <a href="#page3" class="menuText marg">&#9679; YELLOW &#9679;</a><br>
+            <a href="#page4" class="menuText marg">&#9679; RED &#9679;</a><br>
+            <a href="#page5" class="menuText marg">&#9679; GREEN &#9679;</a><br>
+            <div><a href="#page6" class="menuText">CONTACT</a></div>
+            <div><a href="" class="menuText float-left"><i class="fab fa-facebook fa-3x"></i></a></div>
+            <div><a href="" class="menuText float-left"><i class="fab fa-instagram fa-3x"></i></a></div>
         </div>
 
         <section id="page1">
-            <div style="margin-left: 20%;" id="box">
-                <!-- ANIMACJA RYSOWANIE OBRYSU  -->
+            <!-- ANIMACJA RYSOWANIE OBRYSU  -->
+            <div class="center">
                 <svg xmlns="http://www.w3.org/2000.svg" width="900" height="500" id="check">
                     <path d="M 0,135 L0,450 L800,450 L800,0 L450,0" />
                 </svg>
-                <div id="smoothie" class="bg-text m-47">SMOOTHIES</div>
             </div>
+            <div id="smoothie" class="bg-text m">SMOOTHIES</div>
         </section>
 
         <section id="page2">
-            <div class="box2">
-                <div class="box2" data-aos="zoom-in" style="width: 50%; height: 100%; margin-left: 0; padding: 3%; float: left;">
+            <div class="box">
+                <div class="box2" data-aos="zoom-in">
                     <p class="txt-p" style=" font-size: 5vw;">Why should <br>we have</p>
                     <p class="txt-p" style="margin-top: 5vw;">SMOOTHIES?</p>
                 </div>
-                <div style="width: 50%; height: 100%; float: right; position: relative;">
+                <div class="box2" style="position: relative; background-color: rgba(255, 255, 255, 0);">
                     <div class="circle" data-aos="zoom-in" data-aos-delay="300">
-                        <p class="txt-p" style="font-size: 2vw; margin-left: auto; margin-right: auto;">FOLIC ACID<br><span
-                                style="font-size: 1.7vw;">ANTIOXIDANTS</span></p>
+                        <p class="txt-p">FOLIC ACID<br><span>ANTIOXIDANTS</span></p>
                     </div>
-                    <div class="circle" data-aos="zoom-in" data-aos-delay="600" style="width: 11vw; height: 11vw; top: 25%; right: 13%;">
-                        <p class="txt-p" style=" font-size: 2.5vw; margin-left: auto; margin-right: auto;">VIT A<br>VIT
-                            C</p>
+                    <div class="circle" data-aos="zoom-in" data-aos-delay="600">
+                        <p class="txt-p">VIT A<br>VIT C</p>
                     </div>
-                    <div class="circle" data-aos="zoom-in" data-aos-delay="800" style="width: 13vw; height: 13vw; top: 55%; right: 40%;">
-                        <p class="txt-p" style=" font-size: 2.5vw; margin-left: auto; margin-right: auto;">132<br>Calories</p>
+                    <div class="circle" data-aos="zoom-in" data-aos-delay="800">
+                        <p class="txt-p">132<br>Calories</p>
                     </div>
                 </div>
             </div>
         </section>
 
 
-        <section class="bg-image img1 row" style="margin: 0;" id="page3">
+        <section class="bg-image img1 row" id="page3">
             <div class="col-lg-6">
                 <div class="fruit-box" data-aos="flip-left">
-                    <p class="txt-p" style="font-size: 4vw;">YELLOW</p>
+                    <p class="txt-p">YELLOW</p>
                 </div>
                 <div data-aos="zoom-in" data-aos-delay="300">
                     <p class="fruit-list">&#9679; BANAN<br>&#9679; MANGO<br>&#9679; ORANGE</p>
                 </div>
                 <div class="fruit-circle" data-aos="zoom-in" data-aos-delay="500">
-                    <p style="font-size: 2.5vw; text-align: center; margin-top: 2vw;">ONLY<br>5.99</p>
+                    <p>ONLY<br>5.99</p>
                 </div>
             </div>
         </section>
-        <section class="bg-image img2 row" style="margin: 0;" id="page4">
+        <section class="bg-image img2 row" id="page4">
             <div class="col-lg-6">
                 <div class="fruit-box" style="background-color: #e04c27;" data-aos="flip-left">
-                    <p class="txt-p" style="font-size: 4vw;">RED</p>
+                    <p class="txt-p">RED</p>
                 </div>
                 <div data-aos="zoom-in" data-aos-delay="300">
                     <p class="fruit-list">&#9679; STRAWBERRIES<br>&#9679; RASPBERRIES<br>&#9679; MELON</p>
                 </div>
                 <div class="fruit-circle" style="background-color: #e04c27;" data-aos="zoom-in" data-aos-delay="500">
-                    <p style="font-size: 2.5vw; text-align: center; margin-top: 2vw;">ONLY<br>4.99</p>
+                    <p>ONLY<br>4.99</p>
                 </div>
             </div>
         </section>
-        <section class="bg-image img3 row" style="margin: 0;" id="page5">
+        <section class="bg-image img3 row" id="page5">
             <div class="col-lg-6">
                 <div class="fruit-box" style="background-color: #bcd86e;" data-aos="flip-left">
-                    <p class="txt-p" style="font-size: 4vw;">GREEN</p>
+                    <p class="txt-p">GREEN</p>
                 </div>
                 <div data-aos="zoom-in" data-aos-delay="300">
                     <p class="fruit-list">&#9679; KIWI<br>&#9679; CURLY KALE<br>&#9679; BANAN</p>
                 </div>
                 <div class="fruit-circle" style="background-color: #bcd86e;" data-aos="zoom-in" data-aos-delay="500">
-                    <p style="font-size: 2.5vw; text-align: center; margin-top: 2vw;">ONLY<br>5.99</p>
+                    <p>ONLY<br>5.99</p>
                 </div>
             </div>
         </section>
 
-        <section id="page6" style="padding-bottom: 3%;">
-            <div class="row" style="margin: 0;">
-                <form class="col-lg-4 col-md-6 col-sm-12">
-                    <label style="font-size: 3vw;">Contact us!</label>
+        <section id="page6">
+            <div class="row">
+                <form class="col-lg-4 col-sm-12">
+                    <label>Contact us!</label>
                     <div class="form-group">
                         <label>Name</label>
                         <input type="text" class="form-control" placeholder="Enter your name">
@@ -132,20 +129,20 @@
                     </div>
                     <div class="form-group">
                         <label>Message</label>
-                        <textarea type="text" class="form-control" style="height: 30%; resize: none;" placeholder="Enter your message"></textarea>
+                        <textarea type="text" class="form-control" placeholder="Enter your message"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send</button>
                 </form>
                 <div class="col-lg-4"></div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div style="margin-top: 25%; float: left;"><a href="" class="menuText2"><i class="fab fa-facebook fa-3x"></i></a></div>
-                    <div style="margin-top: 25%; float: left; margin-left: 10%;"><a href="" class="menuText2"><i class="fab fa-instagram fa-3x"></i></a></div>
+                <div class="col-lg-4">
+                    <a href="" class="icons"><i class="fab fa-facebook fa-3x"></i></a>
+                    <a href="" class="icons"><i class="fab fa-instagram fa-3x"></i></a>
                 </div>
             </div>
             <footer>© 2019 KM</footer>
         </section>
     </div>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> 
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </body>
 
 </html>

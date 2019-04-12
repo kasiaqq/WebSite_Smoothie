@@ -1,16 +1,14 @@
 html{
     scroll-behavior: smooth;
-    overflow: visible; 
+    overflow: auto; 
     width: 100%; 
     height: 100vh; 
     box-sizing: border-box;
+    font-family: 'Averia Libre', cursive;
 }
 body{
-    width:100%;
     margin: 0;
-}
-.contant{
-    font-family: 'Averia Libre', cursive;
+    padding: 0;
 }
 .main-background{
     background-image: url(main-background.jpg);
@@ -28,25 +26,34 @@ body{
 #page1, #page2{
     height: 100%;
     width: 100%;
-    padding-top: 5%;
+    padding-top: 10%;
     background-color: rgb(19, 19, 19, 0.3);
 }
 #page6{
     width: 100%;
+    height: 100%;
+    margin: 0;
     background-color: rgb(19, 19, 19, 0.8);
     padding: 7%;
 }
 label{
     color: white;
 }
-.box2{
-    position: relative;
-    margin-left: 10%;
+.box{
     width: 80%;
     height: 90%;
     background-color: rgba(255, 255, 255, 0.4);
+    margin-left: 10%;
+}
+.box2{
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 50%;
+    height: 100%;
+    padding: 3%; 
+    float: left;
 }
 .fixed-bar{
+    position: relative;
     height: 15%;
     width: 100%;
     position: fixed;
@@ -54,28 +61,15 @@ label{
     z-index: 10px;
 }
 .menuButton{
-    height: 0.7vw;
-    width: 4vw;
-    border-radius: 15px;
-    background-color: rgb(202, 202, 202);
-    /*box-shadow: 0 1.5vw 0 0 rgb(202, 202, 202),
-                0 3vw 0 0 rgb(202, 202, 202); */
-    float: right;
-    margin-top: 3%;
-    margin-right: -2%;
-}
-.menuButton::before,
-.menuButton::after{
-display: block;
-content: '';
-height: 0.7vw;
-width: 4vw;
-border-radius: 15px;
-background-color: rgb(202, 202, 202);
-margin-top: 1.5vw;
-}
-.menuButton::after{
-    margin-top: 0.8vw;
+    position: absolute;
+    background-image: url("menu.png");
+    filter: invert(85%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 100%;
+    top: 20%;
+    left: 88%;
 }
 .menuSlide{
     height: 100%;
@@ -87,8 +81,11 @@ margin-top: 1.5vw;
     background-color: #111;
     opacity: 0.6;
     overflow-x: hidden;
-    transition: 0.3s width linear;
+    transition: 0.3s all linear;
     padding-top:6%;
+}
+.open{
+    width: 20%;
 }
 #close{
     filter: invert(95%);
@@ -106,23 +103,21 @@ margin-top: 1.5vw;
     transition: 0.3s; 
     font-family: 'Averia Libre', cursive;
     margin-left: 15%;
+}
+.marg{
     margin-top: 10%;
     margin-bottom: 1%;
 }
-.menuText2{
-    color: black;
-    filter: invert(95%);
-    text-decoration: none;
-    font-size: 2vw;
-    transition: 0.3s; 
-    font-family: 'Averia Libre', cursive;
-    margin-left: 15%;
+.menuSlide div{
+    display: block;
+    margin-top: 10%;
 }
 a:hover{
     text-decoration: none;
 }
 
 .bg-image{
+    margin: 0;
     width: 100%;
    height: 100%;
    background-position: 90% 50%;
@@ -147,23 +142,51 @@ a:hover{
     font-weight: bold;
     font-size: 7vw;
 }
-.m-47{
-    margin-top: -47%;
+.m{
+    position: absolute;
+    margin-top: -35%;
+    margin-left: 20%;
 }
 .circle{
     position: absolute;
     float: right;
     background-color: rgb(255, 255, 255, 0.8);
     border-radius: 50%;
-    height: 15vw;
-    width: 15vw;
-    top: 5%;
     display: flex;
     align-items: center;
+    justify-content: center;
     box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
     -moz-box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
     -webkit-box-shadow:  5px 5px 20px rgba(0,0,0,0.2);
     -o-box-shadow:  5px 5px 20px rgba(0,0,0,0.2);
+}
+div.circle:nth-child(1){
+    height: 15vw;
+    width: 15vw;
+    top: 5%;
+}
+div.circle:nth-child(1) p{
+    font-size: 2vw; 
+    text-align: center;
+}
+div.circle:nth-child(1) p span{
+    font-size: 1.7vw;
+}
+div.circle:nth-child(2){
+    width: 11vw;
+    height: 11vw;
+    top: 25%;
+    right: 13%;
+}
+div.circle:nth-child(n+2) p{
+    font-size: 2.5vw; 
+    text-align: center;
+}
+div.circle:nth-child(3){
+    width: 13vw;
+    height: 13vw;
+    top: 55%;
+    right: 40%;
 }
 .txt-p{
     display: block;
@@ -193,6 +216,9 @@ a:hover{
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
     line-height: 9vw;
 }
+.fruit-box p{
+    font-size: 4vw;
+}
 .fruit-circle{
     position: relative;
     left: 10vw;
@@ -206,13 +232,37 @@ a:hover{
     -moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
     -webkit-box-shadow:  5px 5px 10px rgba(0,0,0,0.2);
     -o-box-shadow:  5px 5px 10px rgba(0,0,0,0.2);
+    font-size: 2.5vw;
+    text-align: center;
+    padding-top: 2.5vw;
+}
+form>label{
+    font-size: 3vw;
+}
+.icons{
+    margin-top: 25%;
+    margin-left: 10%;
+    float: left;
+    color: black;
+    filter: invert(95%); 
+    font-size: 1.7vw;
+}
+textarea{
+    height: 30%;
+    resize: none;
 }
 footer{
+    display:block;
     color:rgb(202, 202, 202);
-    float: right;
     margin: 0;
+    margin-top: 10%;
+    text-align: center;
 }
 /* ANIMACJA RYSOWANIE OBRYSU*/
+.center{
+    display: flex;
+    justify-content: center;
+}
  #check path{
     position: absolute;
     opacity: 0.9;
@@ -221,14 +271,156 @@ footer{
     fill: transparent;
     stroke-dasharray: 1915;
     stroke-dashoffset: 1915;
-    transition: stroke-dashoffset 2s linear 0.5s;
+    transition: all 2s linear 0.5s;
 }
 #check.checked path{
     stroke-dashoffset: 0;
     fill: transparent;
-    transition: stroke-dashoffset 2s linear 0.5s;
+    transition: all 2s linear 0.5s;
 } 
-@media all and (min-width: 1600px) {
+
+/* MEDIA QUERIES */
+@media (max-width: 680px) {
+    body { height: 50vh; width: 100%;}
+    .m{
+        margin:0;
+        margin-top: 20%;
+        margin-left: 10%;
+        padding: 5%;
+        border: 3px solid #fff;
+    }
+    svg { display: none; }
+    .fixed-bar { height: 10%;}
+    .menuButton { 
+        height: 70%;
+        width: 100%;
+        left: 70%;
+    }
+    .menuSlide{
+        height: 0;
+        width: 100%;
+        padding-top: 0;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .menuSlide p{
+        margin-bottom: 5%;
+    }
+    .menuSlide a:first-child{
+        width: 10%;
+    }
+    .open{
+        width: 100%;
+        height: 30%;
+    }
+    .menuText {
+        display: block;
+        width: 40%;
+        height: 5%;
+        font-size: 4vw;
+        margin: 0;
+        margin-left: 5%;
+    }
+    .fa-instagram{
+        display: block;
+        margin-top: 30%;
+    }
+    #close{
+        float: none;
+        margin: 0;
+        height: 100%;
+    }
+    div.circle:nth-child(2){
+        top: 30%;
+    }
+    div.circle:nth-child(n+1) p{
+        margin:0;
+        align-self: center;
+        font-size: 3vw;
+    }
+    #page2 > div div:first-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menuSlide div{
+        margin: 5%;
+    }
+    .circle{
+        height: 20vw !important;
+        width: 20vw !important;
+    }
+    .bg-image { 
+        background-position: 90% 50%;
+        background-size: 50%;
+     }
+     section > .col-lg-6{
+         margin-top: 20%;
+         margin-left: -10%;
+     }
+     #page6{
+         height: 100vh;
+         width: 100%;
+     }
+     form>label{
+         font-size: 5vw;
+     }
+     textarea{
+         height: 10%;
+     }
+     .icons{
+         font-size: 3vw;
+     }
+ }
+ @media (orientation: landscape) and (max-width: 680px) {
+    body { height: 100vh; width: 100%;} 
+    .fixed-bar { height: 15%;}
+    .m{
+        margin-left: 30%;
+    } 
+    .menuButton { left: 80%;}
+    .menuSlide{
+        height: 100%;
+        width: 0;
+    }
+    .open{
+        width: 30%;
+        height: 100%;
+    }
+    .menuText{ font-size: 2vw; height: 2%;}
+    #btn-page1{
+        margin-top: 15%;
+    }
+    .circle{
+        height: 15vw !important;
+        width: 15vw !important;
+    }
+    div.circle:nth-child(2){ top: 20%;}
+    div.circle:nth-child(n+1) p{ font-size: 2vw;}
+    section > .col-lg-6{ margin: 0;}
+    .icons{
+        position: relative;
+        margin: 0;
+        top: -30vh;
+        float: right;
+    }
+    .form-control{ 
+        position: absolute;
+        left: 20%;
+        width: 40%; 
+        display: inline; }
+    textarea{ height: 40%;}
+    .icons .fa-facebook{ margin-left: 20%;}
+    .icons .fa-instagram{ margin:0;}
+    footer{
+        margin:0;
+        margin-top: -10%;
+    }
+ }
+ @media (min-width: 1000px) {
+ }
+/* @media (min-width: 1600px) {
     body { width: 100vw; margin: 0; }
     .fixed-bar { height: 10%; }
     #logo { margin-right: 5%; }
@@ -239,16 +431,4 @@ footer{
     .box2 { width: 70%; height: 80%; }
     .txt-p { font-size: 5vw; }
     .bg-text { font-size: 5vw; }
- }
-@media all and (max-width: 1000px) {
-    svg { display: none; }
-    #smoothie { margin-top: 25vh; }
-    .menuButton { height: 1.4vw; width: 8vw; margin-top: 10%;}
-    .menuButton::before, 
-    .menuButton::after { height: 1.4vw; width: 8vw; margin-top: 3vw;}
-    .menuButton::after { margin-top: 1.6vw;}
- }
- @media all and (max-width: 680px) {
-    body { height: 50vh; }
-    .bg-image { background-position: 90% 50%; }
- }
+ } */

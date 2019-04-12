@@ -18,13 +18,13 @@ $(document).ready(function () {
 	$("#close").click(closeMenu);
 
 	function openMenu() {
-		$("#menuSlide").css({ "width": "20%" });
+		$("#menuSlide").toggleClass("open");
 		$("#menu").addClass("invisible");
 		$("#close").removeClass("invisible");
 		$(".menuText").removeClass("invisible");
 	}
 	function closeMenu() {
-		$("#menuSlide").css({ "width": "0" });
+		$("#menuSlide").toggleClass("open");
 		$("#menu").removeClass("invisible");
 		$("#close").addClass("invisible");
 		$(".menuText").addClass("invisible");
