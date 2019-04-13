@@ -252,10 +252,10 @@ textarea{
     resize: none;
 }
 footer{
-    display:block;
+    display: block;
     color:rgb(202, 202, 202);
     margin: 0;
-    margin-top: 10%;
+    margin-bottom: -7%;
     text-align: center;
 }
 /* ANIMACJA RYSOWANIE OBRYSU*/
@@ -282,14 +282,6 @@ footer{
 /* MEDIA QUERIES */
 @media (max-width: 680px) {
     body { height: 50vh; width: 100%;}
-    .m{
-        margin:0;
-        margin-top: 20%;
-        margin-left: 10%;
-        padding: 5%;
-        border: 3px solid #fff;
-    }
-    svg { display: none; }
     .fixed-bar { height: 10%;}
     .menuButton { 
         height: 70%;
@@ -418,17 +410,18 @@ footer{
         margin-top: -10%;
     }
  }
- @media (min-width: 1000px) {
- }
-/* @media (min-width: 1600px) {
-    body { width: 100vw; margin: 0; }
+@media (max-width:1000px){
+    svg { display: none; }
+    .m{
+        border: 3px solid #fff;
+        margin:0;
+        margin-top: 20%;
+        margin-left: 10%;
+        padding: 5%;}
+}
+@media (min-width: 1600px) {
     .fixed-bar { height: 10%; }
-    #logo { margin-right: 5%; }
-    #page1 { display: flex; align-items: center; }
-    svg { width: 200%; }
-    #page6 { height: 100vh; }
-    #menu { margin-top: 1.5%; }
-    .box2 { width: 70%; height: 80%; }
-    .txt-p { font-size: 5vw; }
-    .bg-text { font-size: 5vw; }
- } */
+    .bg-text{ font-size: 5vw;}
+    .m{ margin-top: -28%;}
+
+ } 
