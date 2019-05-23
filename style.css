@@ -258,6 +258,9 @@ footer{
     margin-bottom: -7%;
     text-align: center;
 }
+footer a{
+    color:rgb(202, 202, 202);
+}
 /* ANIMACJA RYSOWANIE OBRYSU*/
 .center{
     display: flex;
